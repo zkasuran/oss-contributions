@@ -23,6 +23,17 @@ Public log of all OSS contributions — successes, failures, lessons learned.
 - **Submitted**: 2026-05-31
 - **Expected review**: 1-2 days (based on recent doc PRs)
 
+### Base Network
+
+#### ✅ base/docs
+- **PR #1559**: Security fix for SIWE authentication examples
+- **Status**: Submitted, awaiting review
+- **Type**: Security vulnerability fix
+- **Value**: Prevents cross-domain replay attacks in authenticate-users guide
+- **Link**: https://github.com/base/docs/pull/1559
+- **Submitted**: 2026-05-31
+- **Severity**: High (affects all developers following auth tutorial)
+
 #### ⏳ circlefin/malachite
 - **Issue #1529**: Replace panics with typed errors in discovery crate
 - **Status**: Assignment requested
@@ -95,11 +106,12 @@ Public log of all OSS contributions — successes, failures, lessons learned.
 
 ## Stats
 
-- **PRs Submitted**: 2
+- **PRs Submitted**: 3
 - **Issues Requested**: 2
 - **Merged**: 0 (pending)
 - **Rejected**: 0
-- **In Review**: 2
+- **In Review**: 3
+- **Security Fixes**: 1
 
 ---
 
