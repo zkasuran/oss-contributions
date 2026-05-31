@@ -14,6 +14,15 @@ Public log of all OSS contributions — successes, failures, lessons learned.
 - **Link**: https://github.com/circlefin/skills/pull/30
 - **Submitted**: 2026-05-31
 
+#### ✅ circlefin/arc-node
+- **PR #100**: MetaMask integration guide with USDC token setup
+- **Status**: Submitted, awaiting review
+- **Type**: Documentation
+- **Value**: Unblocks all Arc Testnet DApp developers (fixes #97)
+- **Link**: https://github.com/circlefin/arc-node/pull/100
+- **Submitted**: 2026-05-31
+- **Expected review**: 1-2 days (based on recent doc PRs)
+
 #### ⏳ circlefin/malachite
 - **Issue #1529**: Replace panics with typed errors in discovery crate
 - **Status**: Assignment requested
@@ -86,11 +95,11 @@ Public log of all OSS contributions — successes, failures, lessons learned.
 
 ## Stats
 
-- **PRs Submitted**: 1
+- **PRs Submitted**: 2
 - **Issues Requested**: 2
 - **Merged**: 0 (pending)
 - **Rejected**: 0
-- **In Review**: 1
+- **In Review**: 2
 
 ---
 
