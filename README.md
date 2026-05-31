@@ -34,6 +34,14 @@ Public log of all OSS contributions — successes, failures, lessons learned.
 - **Submitted**: 2026-05-31
 - **Severity**: High (affects all developers following auth tutorial)
 
+- **PR #1560**: Replace Math.random() with crypto.randomUUID() for SIWE nonces
+- **Status**: Submitted, awaiting review
+- **Type**: Security vulnerability fix
+- **Value**: Fixes predictable nonce generation in 4 documentation examples
+- **Link**: https://github.com/base/docs/pull/1560
+- **Submitted**: 2026-05-31
+- **Severity**: High (enables replay attacks)
+
 #### ⏳ circlefin/malachite
 - **Issue #1529**: Replace panics with typed errors in discovery crate
 - **Status**: Assignment requested
@@ -106,12 +114,12 @@ Public log of all OSS contributions — successes, failures, lessons learned.
 
 ## Stats
 
-- **PRs Submitted**: 3
+- **PRs Submitted**: 4
 - **Issues Requested**: 2
 - **Merged**: 0 (pending)
 - **Rejected**: 0
-- **In Review**: 3
-- **Security Fixes**: 1
+- **In Review**: 4
+- **Security Fixes**: 3
 
 ---
 
