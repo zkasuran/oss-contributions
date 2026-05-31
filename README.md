@@ -42,6 +42,15 @@ Public log of all OSS contributions — successes, failures, lessons learned.
 - **Submitted**: 2026-05-31
 - **Severity**: High (enables replay attacks)
 
+#### ✅ base/account-sdk
+- **PR #335**: Throw error instead of warning for test-only function in production
+- **Status**: Submitted, awaiting review
+- **Type**: Production safety fix
+- **Value**: Prevents accidental misuse of test utility that could drain token allowances
+- **Link**: https://github.com/base/account-sdk/pull/335
+- **Submitted**: 2026-05-31
+- **Severity**: Medium (production safety)
+
 #### ⏳ circlefin/malachite
 - **Issue #1529**: Replace panics with typed errors in discovery crate
 - **Status**: Assignment requested
@@ -114,12 +123,13 @@ Public log of all OSS contributions — successes, failures, lessons learned.
 
 ## Stats
 
-- **PRs Submitted**: 4
+- **PRs Submitted**: 5
 - **Issues Requested**: 2
 - **Merged**: 0 (pending)
 - **Rejected**: 0
-- **In Review**: 4
+- **In Review**: 5
 - **Security Fixes**: 3
+- **Production Safety**: 1
 
 ---
 
