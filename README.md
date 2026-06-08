@@ -24,6 +24,14 @@ Public log of all OSS contributions — successes, failures, lessons learned.
 - **Submitted**: 2026-05-31
 - **Update 2026-06-09**: A community comment (#89) prompted a re-verification of the guide against the repo config, the MetaMask spec and the live testnet RPC. Found and fixed three real defects in the original guide: wrong chainId (`0x4CF252` = 5042770, should be `0x4CEF52` = 5042002), wrong nativeCurrency (`USDC`/6 decimals, MetaMask requires `ETH`/18 per #95), and a dead RPC URL (`rpc.arc.network`, switched to `rpc.drpc.testnet.arc.network`, #90). Also documented the `wallet_switchEthereumChain` silent-fail workaround (#89).
 
+- **PR #127**: CCTP V2 integration guide for Arc Testnet
+- **Status**: Open, awaiting maintainer review. Submitted 2026-06-09.
+- **Type**: Documentation (resolves #110)
+- **Value**: Documents the Arc-specific CCTP V2 details (domain 26, V2-only depositForBurn selector, minFinalityThreshold 2000, gas-estimation workaround, Iris attestation flow) for every developer moving native USDC on and off Arc.
+- **Link**: https://github.com/circlefin/arc-node/pull/127
+- **Verification**: domain + contract addresses checked against Circle's CCTP references; both depositForBurn selectors computed via keccak (V2 `0x8e0250ee`, V1 `0x6fd3504e`); TokenMessenger confirmed to have code on Arc Testnet via `eth_getCode`; Iris API paths confirmed live.
+- **Note**: chosen after a deep review of arc-node established that the flashy bug reports (#59, #87, #111, #57) all trace to upstream reth or live infra, and Arc's own Rust + Solidity is well-defended (two security sweeps, zero exploitable findings). A verified docs gap was the honest high-value contribution available.
+
 ### Base Network
 
 #### base/docs
@@ -127,13 +135,14 @@ Public log of all OSS contributions — successes, failures, lessons learned.
 
 ## Stats
 
-- **PRs Submitted**: 5
+- **PRs Submitted**: 6
 - **Issues Requested**: 2 (both already assigned to others, not pursued)
 - **Merged**: 0
 - **Rejected**: 0
-- **In Review**: 5 (all mergeable, blocked on maintainer review)
+- **In Review**: 6 (all mergeable, blocked on maintainer review)
 - **Security Fixes**: 3
 - **Production Safety**: 1
+- **Documentation**: 3
 
 ---
 
